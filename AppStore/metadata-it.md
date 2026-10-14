@@ -5,6 +5,9 @@
 **Parole chiave (100):** sos,emergenza,aiuto,posizione,gps,sms,sirena,torcia,morse,scheda medica,sicurezza,soccorso,112
 **Categoria:** Utility (secondaria: Salute e fitness)
 **Versione:** 2.0
+**URL marketing:** https://emmebiweb.com/sos-app-mb
+**URL assistenza:** https://emmebiweb.com/sos-app-mb/#assistenza
+**Privacy Policy:** https://emmebiweb.com/privacy-policy/
 
 ## Testo promozionale (170)
 Tutto nuovo: design moderno, conto alla rovescia anti-errore, torcia SOS in codice Morse, scheda medica, widget e Tasto Azione.

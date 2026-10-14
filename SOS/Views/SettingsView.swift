@@ -102,7 +102,7 @@ struct SettingsView: View {
 
                 Section {
                     LabeledContent("Versione", value: Bundle.main.appVersion)
-                    Link(destination: URL(string: "https://www.emmebiweb.it")!) {
+                    Link(destination: URL(string: "https://emmebiweb.com/sos-app-mb")!) {
                         Label("emmeBiweb", systemImage: "globe")
                     }
                 } footer: {
