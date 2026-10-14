@@ -94,7 +94,7 @@ struct SOSWidgetView: View {
 @available(iOS 18.0, *)
 struct SOSControl: ControlWidget {
     var body: some ControlWidgetConfiguration {
-        StaticControlConfiguration(kind: "com.emmeibweb.sosapp.control") {
+        StaticControlConfiguration(kind: "com.emmebiweb.sosapp.control") {
             ControlWidgetButton(action: TriggerSOSIntent()) {
                 Label("SOS", systemImage: "sos")
             }

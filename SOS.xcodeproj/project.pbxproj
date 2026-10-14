@@ -339,7 +339,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.emmeibweb.sosapp.widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmebiweb.sosapp.widget;
 				PRODUCT_NAME = SOSWidget;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -359,7 +359,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.emmeibweb.sosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmebiweb.sosapp;
 				PRODUCT_NAME = SOS;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -377,7 +377,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.emmeibweb.sosapp.widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmebiweb.sosapp.widget;
 				PRODUCT_NAME = SOSWidget;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -397,7 +397,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.emmeibweb.sosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmebiweb.sosapp;
 				PRODUCT_NAME = SOS;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
