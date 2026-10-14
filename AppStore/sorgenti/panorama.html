@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800;900&family=Inter:wght@400;600;700&display=block" rel="stylesheet">
+<style>
+:root{--red:#ED1C24;--bright:#FF5A4D;--deep:#9E0814;--cream:#FFF3EE;--ink:#1A0507;--W:1320px;--H:2868px}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:calc(var(--W)*7);height:var(--H);overflow:hidden;background:#000}
+.pano{position:relative;width:100%;height:100%;font-family:Inter,sans-serif;color:#fff}
+.slide{position:absolute;top:0;width:var(--W);height:var(--H);overflow:visible}
+.bg{position:absolute;inset:0}
+.red{background:linear-gradient(160deg,var(--bright) 0%,var(--red) 45%,var(--deep) 100%)}
+.cream{background:var(--cream)}
+.dark{background:radial-gradient(circle at 50% 62%,#5a0a10 0%,#1a0507 55%,#0c0203 100%)}
+.stripes{position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 26px,transparent 26px 70px)}
+h1{font-family:Archivo,sans-serif;font-weight:900;font-size:150px;line-height:.98;letter-spacing:-4px}
+.kicker{font-family:Archivo;font-weight:800;font-size:44px;letter-spacing:8px;text-transform:uppercase;opacity:.85;margin-bottom:34px}
+p.sub{font-size:58px;line-height:1.3;font-weight:600;margin-top:44px;opacity:.92}
+.copy{position:absolute;left:110px;right:110px;top:250px;z-index:5}
+.on-cream h1{color:var(--red)} .on-cream p.sub,.on-cream .kicker{color:var(--ink)}
+.phone{position:absolute;width:1040px;padding:30px;border-radius:176px;background:linear-gradient(145deg,#3b3b40,#0d0d0f 40%,#2a2a2e);
+  box-shadow:0 0 0 6px #6b6b72 inset,0 80px 160px rgba(0,0,0,.45),0 20px 50px rgba(0,0,0,.35);z-index:4}
+.phone img{display:block;width:100%;border-radius:148px}
+.chip{position:absolute;z-index:6;background:#fff;color:var(--ink);font-family:Inter;font-weight:700;font-size:50px;padding:34px 50px;border-radius:999px;
+  box-shadow:0 30px 70px rgba(80,0,0,.35);display:flex;gap:22px;align-items:center;white-space:nowrap}
+.chip b{color:var(--red)}
+.morse{position:absolute;z-index:3;display:flex;gap:34px;align-items:center;left:50%;transform:translateX(-50%)}
+.dot,.dash{background:#ff3b30;border-radius:999px;box-shadow:0 0 50px #ff3b30,0 0 120px rgba(255,59,48,.7)}
+.dot{width:56px;height:56px}.dash{width:160px;height:56px}
+.big{position:absolute;font-family:Archivo;font-weight:900;color:rgba(237,28,36,.10);z-index:1;line-height:.8}
+.widget{position:absolute;z-index:5;border-radius:120px;box-shadow:0 50px 120px rgba(60,0,0,.45)}
+</style></head><body><div class="pano">
+
+<!-- 1 HERO -->
+<section class="slide" style="left:0">
+  <div class="bg" style="background:url(hero.jpg) center/cover"></div>
+  <div class="bg" style="background:linear-gradient(180deg,rgba(10,2,4,.55) 0%,rgba(10,2,4,.1) 40%,rgba(158,8,20,.55) 75%,rgba(237,28,36,.95) 100%)"></div>
+  <div class="copy">
+    <img src="logo-white.png" style="width:330px;margin-bottom:70px;filter:drop-shadow(0 10px 30px rgba(0,0,0,.4))">
+    <h1>Aiuto<br>in un tocco.</h1>
+    <p class="sub">Invia la tua posizione a chi ami, ovunque tu sia.</p>
+  </div>
+</section>
+
+<!-- 2 POSIZIONE (telefono a cavallo 1|2) -->
+<section class="slide" style="left:1320px">
+  <div class="bg red"></div><div class="stripes"></div>
+  <div class="copy" style="left:330px;text-align:right">
+    <div class="kicker">Via SMS</div>
+    <h1>Funziona<br>anche senza<br>internet.</h1>
+  </div>
+</section>
+<div class="phone" style="left:780px;top:1180px;transform:rotate(-11deg)"><img src="01-home.png"></div>
+
+<!-- 3 COUNTDOWN -->
+<section class="slide on-cream" style="left:2640px">
+  <div class="bg cream"></div>
+  <div class="big" style="font-size:1500px;right:-140px;top:1050px">5</div>
+  <div class="copy">
+    <div class="kicker">Niente falsi allarmi</div>
+    <h1>5 secondi<br>per annullare.</h1>
+    <p class="sub">Premuto per sbaglio? Annulli con un tocco.</p>
+  </div>
+  <div class="phone" style="left:140px;top:1250px"><img src="03-countdown.png"></div>
+</section>
+
+<!-- 4 MESSAGGIO -->
+<section class="slide" style="left:3960px">
+  <div class="bg red"></div><div class="stripes"></div>
+  <div class="copy">
+    <div class="kicker">Un solo messaggio</div>
+    <h1>Tutto ciò<br>che serve.</h1>
+  </div>
+  <div class="phone" style="left:140px;top:1080px;transform:rotate(4deg)"><img src="04-preview.png"></div>
+  <div class="chip" style="left:60px;top:1620px">📍 <span>Indirizzo <b>esatto</b></span></div>
+  <div class="chip" style="right:40px;top:1960px">🗺️ <span>Link alla <b>mappa</b></span></div>
+  <div class="chip" style="left:90px;top:2330px">🩺 <span>Scheda <b>medica</b></span></div>
+</section>
+
+<!-- 5 ALLARME -->
+<section class="slide" style="left:5280px">
+  <div class="bg dark"></div>
+  <div class="copy">
+    <div class="kicker" style="color:#ff6b61">Fatti trovare</div>
+    <h1>Sirena e<br>torcia SOS.</h1>
+    <p class="sub">Il flash lampeggia in codice Morse.</p>
+  </div>
+  <div class="morse" style="top:1020px">
+    <i class="dot"></i><i class="dot"></i><i class="dot"></i>
+    <i class="dash"></i><i class="dash"></i><i class="dash"></i>
+    <i class="dot"></i><i class="dot"></i><i class="dot"></i>
+  </div>
+  <div class="phone" style="left:140px;top:1250px"><img src="02-alarm.png"></div>
+</section>
+
+<!-- 6 SCHEDA MEDICA -->
+<section class="slide on-cream" style="left:6600px">
+  <div class="bg cream"></div>
+  <div class="big" style="font-size:1100px;right:-200px;top:1500px">+</div>
+  <div class="copy">
+    <div class="kicker">Per i soccorritori</div>
+    <h1>La tua scheda<br>medica.</h1>
+    <p class="sub">Gruppo sanguigno, allergie e farmaci a portata di mano.</p>
+  </div>
+  <div class="phone" style="left:140px;top:1250px;transform:rotate(-3deg)"><img src="05-medical.png"></div>
+</section>
+
+<!-- 7 ACCESSO RAPIDO -->
+<section class="slide" style="left:7920px">
+  <div class="bg red"></div><div class="stripes"></div>
+  <div class="copy">
+    <div class="kicker">Sempre a portata</div>
+    <h1>Widget, Siri<br>e Tasto Azione.</h1>
+  </div>
+  <!-- widget piccolo -->
+  <div class="widget" style="left:150px;top:1180px;width:600px;height:600px;background:linear-gradient(160deg,#FF5A4D,#ED1C24 50%,#9E0814);border:4px solid rgba(255,255,255,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px">
+    <div style="width:330px;height:330px;border-radius:50%;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center">
+      <div style="width:265px;height:265px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-family:Archivo;font-weight:900;font-size:96px;color:#ED1C24;box-shadow:0 20px 40px rgba(0,0,0,.25)">SOS</div>
+    </div>
+    <div style="font-weight:700;font-size:52px">Tocca per aiuto</div>
+  </div>
+  <!-- lock screen circolare -->
+  <div class="widget" style="left:830px;top:1240px;width:340px;height:340px;border-radius:50%;background:rgba(255,255,255,.22);backdrop-filter:blur(20px);border:3px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;font-family:Archivo;font-weight:900;font-size:96px">SOS</div>
+  <div style="position:absolute;left:830px;top:1620px;width:340px;text-align:center;font-weight:600;font-size:40px;opacity:.85;z-index:5">Blocco schermo</div>
+  <!-- Siri -->
+  <div class="chip" style="left:150px;top:1940px;font-size:56px;padding:44px 64px">🎙️ <span>“Invia SOS con <b>SOS</b>”</span></div>
+  <!-- Tasto Azione -->
+  <div style="position:absolute;left:150px;top:2240px;right:150px;height:420px;border-radius:90px;background:rgba(0,0,0,.22);border:3px solid rgba(255,255,255,.3);z-index:5;display:flex;align-items:center;gap:60px;padding:0 70px">
+    <div style="width:70px;height:260px;border-radius:40px;background:linear-gradient(90deg,#ff9f0a,#ff6b00);box-shadow:0 0 60px rgba(255,159,10,.8)"></div>
+    <div><div style="font-family:Archivo;font-weight:900;font-size:76px">Tasto Azione</div>
+      <div style="font-size:46px;opacity:.85;margin-top:14px">Tieni premuto e parte l'SOS</div></div>
+  </div>
+</section>
+
+</div></body></html>

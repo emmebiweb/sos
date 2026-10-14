@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		025A3751C2857F33EF0A0B15 /* SOSCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF15AB49B9A5CE9690D1385C /* SOSCoordinator.swift */; };
+		034C653EF51AB09774BBB437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF9A525BFB70EECA9B963DE /* Assets.xcassets */; };
+		08A34D8DD1E39754928B7546 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D8AA63D2CDDC63569C339 /* SettingsView.swift */; };
+		2706E33768565A38F7DB0DF2 /* siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35E2C777EE3333D9C6A20B8E /* siren.mp3 */; };
+		35BDBDD1F2D497C7F1A4CF67 /* AlertDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531EEB9276263EA90E5149F6 /* AlertDevices.swift */; };
+		37EC922A601811CE031DEE08 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17F64D0E45D706C75E46F7D /* Components.swift */; };
+		3BB9F6869B901767A4F62C75 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41048F510D578ECB055CBDE7 /* HomeView.swift */; };
+		3E277CEB2AECCA3146DDACE0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC99641FC0DD536109A6CFA0 /* Models.swift */; };
+		41D963B048E44C1DEF51C3B3 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAB56D9467143DD95B25A76 /* SettingsStore.swift */; };
+		491179A4022A1CC9316CDA3C /* SOSWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E5E27DAE20F9EC6DE1927 /* SOSWidget.swift */; };
+		59A49B939B5F0AF8BAD772C1 /* MedicalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31A6457288C3D33CF64FFD /* MedicalCardView.swift */; };
+		71D190A585EBF0B782A5AEB4 /* SOSWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A0B72D58DAA440C48390D095 /* SOSWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7B7B08C09C5E1F973F14EDE2 /* SOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB29571FAEE2FB71501BF1 /* SOSApp.swift */; };
+		B45191331B422A210B8DB850 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11107E4A699F541383EE833 /* OnboardingView.swift */; };
+		BE02A22DBB464620077C810B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2801DE0D54B9C3741A68F7 /* LocationService.swift */; };
+		D3148735B548825D6F5B8F3F /* SOSShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C26D56A105CBD0D3C83D1D /* SOSShared.swift */; };
+		D72D00A7305079F49BF39C27 /* SOSShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C26D56A105CBD0D3C83D1D /* SOSShared.swift */; };
+		D930149C7AB5421D641A7625 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802C0A084A8937C08AB5E4D6 /* CountdownView.swift */; };
+		EF224A864D502F6C181AF097 /* UIKitBridges.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD026BEBFA9726C0366DABE5 /* UIKitBridges.swift */; };
+		FE5B9DABD7321F04F3B63AFD /* SOSIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5ED2717BD9993F6F11E1A5 /* SOSIntents.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34A6DD7306C2F366FCBDFE93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67CCEAD92134AB0595047973 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87CCB8B31137F2EC4CC9A4CD;
+			remoteInfo = SOSWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		287E3BD3488953D9079DC19F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				71D190A585EBF0B782A5AEB4 /* SOSWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F9E5E27DAE20F9EC6DE1927 /* SOSWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSWidget.swift; sourceTree = "<group>"; };
+		1EF9A525BFB70EECA9B963DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35E2C777EE3333D9C6A20B8E /* siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = siren.mp3; sourceTree = "<group>"; };
+		41048F510D578ECB055CBDE7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4C8D8AA63D2CDDC63569C339 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4E53D1F7ADE13C65C80A587C /* SOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		531EEB9276263EA90E5149F6 /* AlertDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDevices.swift; sourceTree = "<group>"; };
+		66C26D56A105CBD0D3C83D1D /* SOSShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSShared.swift; sourceTree = "<group>"; };
+		802C0A084A8937C08AB5E4D6 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		8143F5C7A91CC6C81F682044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9E31A6457288C3D33CF64FFD /* MedicalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCardView.swift; sourceTree = "<group>"; };
+		A0B72D58DAA440C48390D095 /* SOSWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = SOSWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACAB56D9467143DD95B25A76 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		D11107E4A699F541383EE833 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		D17F64D0E45D706C75E46F7D /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		DF15AB49B9A5CE9690D1385C /* SOSCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSCoordinator.swift; sourceTree = "<group>"; };
+		EBCB29571FAEE2FB71501BF1 /* SOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSApp.swift; sourceTree = "<group>"; };
+		EC99641FC0DD536109A6CFA0 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F33C96800328CC5A7165A45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FD026BEBFA9726C0366DABE5 /* UIKitBridges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitBridges.swift; sourceTree = "<group>"; };
+		FE5ED2717BD9993F6F11E1A5 /* SOSIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSIntents.swift; sourceTree = "<group>"; };
+		FF2801DE0D54B9C3741A68F7 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0EFA965765BD844B0D416EE0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				66C26D56A105CBD0D3C83D1D /* SOSShared.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		33631275F9D14FCBFF8C60DC /* SOS */ = {
+			isa = PBXGroup;
+			children = (
+				8143F5C7A91CC6C81F682044 /* Info.plist */,
+				438DD14A000CAC8FD5013F87 /* App */,
+				6401363715D20156E8556B07 /* Intents */,
+				D85E96704CA1C767B27260E1 /* Models */,
+				D41CAF292487C69FCA9642DB /* Resources */,
+				C6B2B33BE2D2A62D16110C67 /* Services */,
+				D0137B3A7662DC3E4F064F62 /* Views */,
+			);
+			path = SOS;
+			sourceTree = "<group>";
+		};
+		33C13F8A81632E7734C855E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E53D1F7ADE13C65C80A587C /* SOS.app */,
+				A0B72D58DAA440C48390D095 /* SOSWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		438DD14A000CAC8FD5013F87 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB29571FAEE2FB71501BF1 /* SOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6401363715D20156E8556B07 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				FE5ED2717BD9993F6F11E1A5 /* SOSIntents.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		75F90EB3A26BFF632A7B19C5 = {
+			isa = PBXGroup;
+			children = (
+				0EFA965765BD844B0D416EE0 /* Shared */,
+				33631275F9D14FCBFF8C60DC /* SOS */,
+				9795EC40C3B95070C2B94259 /* SOSWidget */,
+				33C13F8A81632E7734C855E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9795EC40C3B95070C2B94259 /* SOSWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F33C96800328CC5A7165A45E /* Info.plist */,
+				0F9E5E27DAE20F9EC6DE1927 /* SOSWidget.swift */,
+			);
+			path = SOSWidget;
+			sourceTree = "<group>";
+		};
+		A1B1C06626E227191BC8F4D9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D17F64D0E45D706C75E46F7D /* Components.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C6B2B33BE2D2A62D16110C67 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				531EEB9276263EA90E5149F6 /* AlertDevices.swift */,
+				FF2801DE0D54B9C3741A68F7 /* LocationService.swift */,
+				ACAB56D9467143DD95B25A76 /* SettingsStore.swift */,
+				DF15AB49B9A5CE9690D1385C /* SOSCoordinator.swift */,
+				FD026BEBFA9726C0366DABE5 /* UIKitBridges.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D0137B3A7662DC3E4F064F62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				802C0A084A8937C08AB5E4D6 /* CountdownView.swift */,
+				41048F510D578ECB055CBDE7 /* HomeView.swift */,
+				9E31A6457288C3D33CF64FFD /* MedicalCardView.swift */,
+				D11107E4A699F541383EE833 /* OnboardingView.swift */,
+				4C8D8AA63D2CDDC63569C339 /* SettingsView.swift */,
+				A1B1C06626E227191BC8F4D9 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D41CAF292487C69FCA9642DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1EF9A525BFB70EECA9B963DE /* Assets.xcassets */,
+				35E2C777EE3333D9C6A20B8E /* siren.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D85E96704CA1C767B27260E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC99641FC0DD536109A6CFA0 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87CCB8B31137F2EC4CC9A4CD /* SOSWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9F99A5EAA305DFCD5E6DD3C /* Build configuration list for PBXNativeTarget "SOSWidget" */;
+			buildPhases = (
+				F36EAB81AE081BDC4979B9E7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOSWidget;
+			packageProductDependencies = (
+			);
+			productName = SOSWidget;
+			productReference = A0B72D58DAA440C48390D095 /* SOSWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		98F143226B61A8ED720203FC /* SOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D3B5A854EEA8D43DB043E56 /* Build configuration list for PBXNativeTarget "SOS" */;
+			buildPhases = (
+				7C3528CB8A4D86720B0F904D /* Sources */,
+				54957D05487723CFDA004742 /* Resources */,
+				287E3BD3488953D9079DC19F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D5D52233E09360F44917A5A /* PBXTargetDependency */,
+			);
+			name = SOS;
+			packageProductDependencies = (
+			);
+			productName = SOS;
+			productReference = 4E53D1F7ADE13C65C80A587C /* SOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67CCEAD92134AB0595047973 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					87CCB8B31137F2EC4CC9A4CD = {
+						DevelopmentTeam = JS4SY4GQXQ;
+						ProvisioningStyle = Automatic;
+					};
+					98F143226B61A8ED720203FC = {
+						DevelopmentTeam = JS4SY4GQXQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D020D6B5B4E9191174E12247 /* Build configuration list for PBXProject "SOS" */;
+			developmentRegion = it;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				it,
+			);
+			mainGroup = 75F90EB3A26BFF632A7B19C5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 33C13F8A81632E7734C855E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98F143226B61A8ED720203FC /* SOS */,
+				87CCB8B31137F2EC4CC9A4CD /* SOSWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54957D05487723CFDA004742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034C653EF51AB09774BBB437 /* Assets.xcassets in Resources */,
+				2706E33768565A38F7DB0DF2 /* siren.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C3528CB8A4D86720B0F904D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35BDBDD1F2D497C7F1A4CF67 /* AlertDevices.swift in Sources */,
+				37EC922A601811CE031DEE08 /* Components.swift in Sources */,
+				D930149C7AB5421D641A7625 /* CountdownView.swift in Sources */,
+				3BB9F6869B901767A4F62C75 /* HomeView.swift in Sources */,
+				BE02A22DBB464620077C810B /* LocationService.swift in Sources */,
+				59A49B939B5F0AF8BAD772C1 /* MedicalCardView.swift in Sources */,
+				3E277CEB2AECCA3146DDACE0 /* Models.swift in Sources */,
+				B45191331B422A210B8DB850 /* OnboardingView.swift in Sources */,
+				7B7B08C09C5E1F973F14EDE2 /* SOSApp.swift in Sources */,
+				025A3751C2857F33EF0A0B15 /* SOSCoordinator.swift in Sources */,
+				FE5B9DABD7321F04F3B63AFD /* SOSIntents.swift in Sources */,
+				D3148735B548825D6F5B8F3F /* SOSShared.swift in Sources */,
+				41D963B048E44C1DEF51C3B3 /* SettingsStore.swift in Sources */,
+				08A34D8DD1E39754928B7546 /* SettingsView.swift in Sources */,
+				EF224A864D502F6C181AF097 /* UIKitBridges.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36EAB81AE081BDC4979B9E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72D00A7305079F49BF39C27 /* SOSShared.swift in Sources */,
+				491179A4022A1CC9316CDA3C /* SOSWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D5D52233E09360F44917A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87CCB8B31137F2EC4CC9A4CD /* SOSWidget */;
+			targetProxy = 34A6DD7306C2F366FCBDFE93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2022DCCCFAE60B1A36B957F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SOSWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmeibweb.sosapp.widget;
+				PRODUCT_NAME = SOSWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		34517BC2CFA7645731FD66C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmeibweb.sosapp;
+				PRODUCT_NAME = SOS;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		474953E1AFA37C81E3E37A53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SOSWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmeibweb.sosapp.widget;
+				PRODUCT_NAME = SOSWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7C9183FFDA0C4C3F1EF373CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmeibweb.sosapp;
+				PRODUCT_NAME = SOS;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		86D78A950D6B392ED80A4D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JS4SY4GQXQ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 2.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E2E3CCA81D93F71E68CECB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JS4SY4GQXQ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 2.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D3B5A854EEA8D43DB043E56 /* Build configuration list for PBXNativeTarget "SOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C9183FFDA0C4C3F1EF373CC /* Debug */,
+				34517BC2CFA7645731FD66C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B9F99A5EAA305DFCD5E6DD3C /* Build configuration list for PBXNativeTarget "SOSWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				474953E1AFA37C81E3E37A53 /* Debug */,
+				2022DCCCFAE60B1A36B957F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D020D6B5B4E9191174E12247 /* Build configuration list for PBXProject "SOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86D78A950D6B392ED80A4D57 /* Debug */,
+				E2E3CCA81D93F71E68CECB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67CCEAD92134AB0595047973 /* Project object */;
+}
