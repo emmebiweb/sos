@@ -71,14 +71,6 @@ struct SettingsView: View {
                 }
 
                 Section {
-                    NavigationLink {
-                        MedicalEditView()
-                    } label: {
-                        Label("Scheda medica", systemImage: "cross.case")
-                    }
-                    Toggle(isOn: $store.prefs.includeMedical) {
-                        Label("Includi nel messaggio", systemImage: "text.badge.plus")
-                    }
                     HStack {
                         Label("Numero di emergenza", systemImage: "phone")
                         Spacer()
@@ -88,7 +80,7 @@ struct SettingsView: View {
                             .frame(maxWidth: 90)
                     }
                 } header: {
-                    Text("Salute ed emergenza")
+                    Text("Chiamata rapida")
                 }
 
                 Section {

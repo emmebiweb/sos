@@ -34,9 +34,6 @@ final class SettingsStore {
             EmergencyContact(name: "Marco Bianchi", phone: "+39 347 765 4321"),
             EmergencyContact(name: "Mamma", phone: "+39 340 555 1212")
         ]
-        p.medical = MedicalInfo(fullName: "Luca Ferri", bloodType: "A+", allergies: "Penicillina, arachidi",
-                                medications: "Ventolin al bisogno", conditions: "Asma lieve",
-                                notes: "Portatore di lenti a contatto")
         p.hasOnboarded = !ProcessInfo.processInfo.arguments.contains("-onboarding")
         return p
     }

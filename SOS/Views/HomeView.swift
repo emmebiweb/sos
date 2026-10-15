@@ -16,7 +16,7 @@ struct HomeView: View {
     @State private var toast: String?
 
     enum HomeSheet: String, Identifiable {
-        case settings, medical, preview
+        case settings, preview
         var id: String { rawValue }
     }
 
@@ -72,7 +72,6 @@ struct HomeView: View {
         .sheet(item: $sheet) { item in
             switch item {
             case .settings: SettingsView()
-            case .medical: MedicalCardView()
             case .preview: NavigationStack { MessagePreview() }
             }
         }
@@ -146,12 +145,23 @@ struct HomeView: View {
                            isEnabled: torch.isAvailable) { torch.toggle() }
                 ActionTile(title: "Chiama \(store.prefs.emergencyNumber)",
                            systemImage: "phone.fill") { callEmergency() }
-                ActionTile(title: "Scheda",
-                           systemImage: "cross.case.fill") { sheet = .medical }
+                shareTile
             }
         }
         .padding(14)
         .glassCard(cornerRadius: 32)
+    }
+
+    @ViewBuilder
+    private var shareTile: some View {
+        if let url = location.mapsURL {
+            ShareLink(item: url, message: Text("La mia posizione")) {
+                ActionTileLabel(title: "Condividi", systemImage: "square.and.arrow.up")
+            }
+            .buttonStyle(PressableStyle(scale: 0.95))
+        } else {
+            ActionTile(title: "Condividi", systemImage: "square.and.arrow.up", isEnabled: false) {}
+        }
     }
 
     @ViewBuilder
@@ -212,7 +222,7 @@ struct HomeView: View {
     }
 
     #if DEBUG
-    /// Screenshot App Store: `-screen settings|medical|preview|countdown|alarm`.
+    /// Screenshot App Store: `-screen settings|preview|countdown|alarm`.
     private func openDebugScreen() {
         let args = ProcessInfo.processInfo.arguments
         guard let i = args.firstIndex(of: "-screen"), i + 1 < args.count else { return }

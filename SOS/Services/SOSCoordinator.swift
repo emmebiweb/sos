@@ -38,12 +38,6 @@ enum MessageBuilder {
             lines.append("📍 Posizione non ancora disponibile.")
         }
 
-        if prefs.includeMedical, !prefs.medical.isEmpty {
-            lines.append("")
-            lines.append("🩺 Scheda medica")
-            lines.append(contentsOf: prefs.medical.summaryLines)
-        }
-
         lines.append("")
         lines.append("Inviato con l'app SOS by emmeBiweb")
         return lines.joined(separator: "\n")

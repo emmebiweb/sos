@@ -74,7 +74,7 @@ struct OnboardingView: View {
             FeatureRow(icon: "timer", title: "Conto alla rovescia", text: "5 secondi per annullare un invio accidentale.")
             FeatureRow(icon: "megaphone.fill", title: "Sirena di allarme", text: "Un suono forte per farti trovare.")
             FeatureRow(icon: "flashlight.on.fill", title: "Torcia SOS", text: "Il flash lampeggia ··· ––– ··· in Morse.")
-            FeatureRow(icon: "cross.case.fill", title: "Scheda medica", text: "Gruppo sanguigno, allergie e farmaci nel messaggio.")
+            FeatureRow(icon: "phone.fill", title: "Chiamata rapida", text: "Il 112 o il numero che preferisci, a un tocco.")
             FeatureRow(icon: "bolt.fill", title: "Widget e Tasto Azione", text: "Lancia l'SOS da Home, blocco schermo o Siri.")
             Spacer()
             Spacer()

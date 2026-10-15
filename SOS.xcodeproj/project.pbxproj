@@ -17,7 +17,6 @@
 		3E277CEB2AECCA3146DDACE0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC99641FC0DD536109A6CFA0 /* Models.swift */; };
 		41D963B048E44C1DEF51C3B3 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAB56D9467143DD95B25A76 /* SettingsStore.swift */; };
 		491179A4022A1CC9316CDA3C /* SOSWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E5E27DAE20F9EC6DE1927 /* SOSWidget.swift */; };
-		59A49B939B5F0AF8BAD772C1 /* MedicalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31A6457288C3D33CF64FFD /* MedicalCardView.swift */; };
 		71D190A585EBF0B782A5AEB4 /* SOSWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A0B72D58DAA440C48390D095 /* SOSWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7B7B08C09C5E1F973F14EDE2 /* SOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB29571FAEE2FB71501BF1 /* SOSApp.swift */; };
 		B45191331B422A210B8DB850 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11107E4A699F541383EE833 /* OnboardingView.swift */; };
@@ -64,7 +63,6 @@
 		66C26D56A105CBD0D3C83D1D /* SOSShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSShared.swift; sourceTree = "<group>"; };
 		802C0A084A8937C08AB5E4D6 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		8143F5C7A91CC6C81F682044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		9E31A6457288C3D33CF64FFD /* MedicalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCardView.swift; sourceTree = "<group>"; };
 		A0B72D58DAA440C48390D095 /* SOSWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = SOSWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAB56D9467143DD95B25A76 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		D11107E4A699F541383EE833 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 			children = (
 				802C0A084A8937C08AB5E4D6 /* CountdownView.swift */,
 				41048F510D578ECB055CBDE7 /* HomeView.swift */,
-				9E31A6457288C3D33CF64FFD /* MedicalCardView.swift */,
 				D11107E4A699F541383EE833 /* OnboardingView.swift */,
 				4C8D8AA63D2CDDC63569C339 /* SettingsView.swift */,
 				A1B1C06626E227191BC8F4D9 /* Components */,
@@ -296,7 +293,6 @@
 				D930149C7AB5421D641A7625 /* CountdownView.swift in Sources */,
 				3BB9F6869B901767A4F62C75 /* HomeView.swift in Sources */,
 				BE02A22DBB464620077C810B /* LocationService.swift in Sources */,
-				59A49B939B5F0AF8BAD772C1 /* MedicalCardView.swift in Sources */,
 				3E277CEB2AECCA3146DDACE0 /* Models.swift in Sources */,
 				B45191331B422A210B8DB850 /* OnboardingView.swift in Sources */,
 				7B7B08C09C5E1F973F14EDE2 /* SOSApp.swift in Sources */,
@@ -440,7 +436,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = JS4SY4GQXQ;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -508,7 +504,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = JS4SY4GQXQ;
 				ENABLE_NS_ASSERTIONS = NO;

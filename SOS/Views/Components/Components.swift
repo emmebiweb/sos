@@ -83,29 +83,39 @@ struct ActionTile: View {
 
     var body: some View {
         Button(action: action) {
-            VStack(spacing: 7) {
-                Image(systemName: systemImage)
-                    .font(.system(size: 20, weight: .semibold))
-                    .symbolEffect(.pulse, isActive: isActive)
-                    .frame(height: 24)
-                Text(title)
-                    .font(.caption.weight(.semibold))
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.8)
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 13)
-            .foregroundStyle(isActive ? Color.white : Color.primary)
-            .background {
-                RoundedRectangle(cornerRadius: 18, style: .continuous)
-                    .fill(isActive ? AnyShapeStyle(LinearGradient.sos) : AnyShapeStyle(Color.primary.opacity(0.07)))
-            }
+            ActionTileLabel(title: title, systemImage: systemImage, isActive: isActive)
         }
         .buttonStyle(PressableStyle(scale: 0.95))
         .disabled(!isEnabled)
         .opacity(isEnabled ? 1 : 0.4)
         .sensoryFeedback(.impact(weight: .medium), trigger: isActive)
         .accessibilityAddTraits(isActive ? .isSelected : [])
+    }
+}
+
+struct ActionTileLabel: View {
+    let title: String
+    let systemImage: String
+    var isActive = false
+
+    var body: some View {
+        VStack(spacing: 7) {
+            Image(systemName: systemImage)
+                .font(.system(size: 20, weight: .semibold))
+                .symbolEffect(.pulse, isActive: isActive)
+                .frame(height: 24)
+            Text(title)
+                .font(.caption.weight(.semibold))
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 13)
+        .foregroundStyle(isActive ? Color.white : Color.primary)
+        .background {
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .fill(isActive ? AnyShapeStyle(LinearGradient.sos) : AnyShapeStyle(Color.primary.opacity(0.07)))
+        }
     }
 }
 
