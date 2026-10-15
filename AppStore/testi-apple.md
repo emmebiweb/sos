@@ -66,8 +66,7 @@ Italian-speaking people who spend time alone or outdoors: hikers and mountain-go
 Most safety apps require an account, a subscription, a backend service or an internet connection, and many share the location continuously with a server. SOS does none of this: no account, no server, no tracking, no third-party SDKs; the position leaves the device only in an SMS the user sees and sends. It works with only cellular voice/SMS coverage, and it puts every emergency tool (SMS with position, siren, Morse torch, emergency call) on a single screen reachable from widget, Lock Screen, Siri and Action Button. Apple's built-in Emergency SOS calls emergency services; our app instead notifies the user's own trusted contacts with an exact, readable address, which is often what is needed in non-life-threatening situations (lost, unsafe, stranded).
 
 4. Beta testing
-[DA COMPLETARE CON DATI REALI: chi ha provato la build via TestFlight, su quali iPhone, e quali modifiche sono nate dai loro commenti. Non inventare.]
-Example of feedback applied: the 5-second cancellable countdown was introduced because the original version sent the SOS immediately and users reported accidental sends.
+[DA COMPLETARE CON DATI REALI: chi ha provato la build via TestFlight, su quali iPhone, e quali modifiche sono nate dai loro commenti. Se il test è stato solo tuo, scrivilo così: Apple preferisce la verità a un elenco inventato.]
 
 5. Standalone or suite
 Standalone. The other apps on our account are unrelated: Omnia – Dove guardarlo (streaming guide), instaMB (photo editing), Da Fare (to-do lists), Crea Banner (graphics), Lettore QR (QR code scanner), TSS Academy and emmeBi. None offers location sharing, alarms or emergency features.
