@@ -70,7 +70,7 @@ Most safety apps require registration, an account, a paid subscription or in-app
 The app was tested by me, the developer, through TestFlight on my own iPhone and in the iOS Simulator, checking the full flow: location and address lookup, the cancellable countdown, the pre-filled SMS, the siren with the screen locked, the Morse torch, the widget, Siri and Action Button triggers. The app works as intended. The design also reflects years of real use of version 1.x by my family in areas with SMS-only coverage.
 
 5. Standalone or part of a suite
-Standalone. The other apps on our account are unrelated: Omnia – Dove guardarlo (guide to where to watch films and TV series), instaMB (photo editing), Da Fare (to-do lists and reminders), Crea Banner (banner and graphics creation), Lettore QR (QR code scanner), TSS Academy (online courses app, in development) and emmeBi (app for our company website, in development). None of them offers location sharing, alarms or emergency features.
+Standalone. The other apps on our account are unrelated: Omnia – Dove guardarlo (guide to where to watch films and TV series), instaMB (photo editing), Da Fare (to-do lists and reminders), Crea Banner (banner and graphics creation), Lettore QR (QR code scanner), TSS Academy (online courses app, in development) and emmeBi (app for my personal website, in development). None of them offers location sharing, alarms or emergency features.
 
 6. Could it be an in-app purchase or feature of another app?
 No. None of our apps is related to personal safety. An emergency tool must be a separate app that can be reached instantly, with its own widget, Siri shortcut and Action Button entry; hiding it inside an unrelated app would defeat its purpose.
