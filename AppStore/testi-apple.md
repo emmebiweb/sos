@@ -50,38 +50,39 @@ Michele Bazzoli
 
 ---
 
-## 3. Risposta al rifiuto 4.3 / 4.2.6 (15 ottobre 2026)
+## 3. Risposta al rifiuto 4.3 / 4.2.6 (versione finale)
 
 Hello,
 
 Thank you for the review. We believe the app meets guidelines 4.3 and 4.2.6, so we are replying instead of resubmitting. Answers to your questions:
 
-1. What the app does / problem solved
-SOS lets a person in difficulty (lost on a hike, feeling unsafe, injured, car breakdown at night) tell the people they trust exactly where they are, with one tap and without needing mobile data. Tapping the SOS button starts a 5-second cancellable countdown, then opens the system Messages composer pre-filled with the current street address, GPS coordinates with accuracy and a map link, addressed to contacts the user chose in advance. Because it uses plain SMS, it works where there is phone signal but no data connection, which is common in mountain areas. The same screen offers an alarm siren that keeps playing with the screen locked, a torch that flashes "SOS" in Morse code, a one-tap call to 112 (configurable), and location sharing to any app. It can be triggered from a Home/Lock Screen widget, Siri, the Action Button and Control Center, so it can be used without unlocking and searching for the app.
+1. What the app does and the problem it solves
+SOS was born from a personal need. Where my grandparents live, in rural Italy, the mobile network often offers only basic voice and SMS coverage: there is no usable data connection, so WhatsApp, iMessage and location-sharing apps simply do not work. I wanted a way for them, and for me when I am in the mountains, to tell family exactly where they are with a single tap. This situation is common in many rural and mountain areas of Italy.
+Tapping the SOS button starts a 5-second cancellable countdown, then opens the system Messages composer pre-filled with the current street address, GPS coordinates with accuracy and a map link, addressed to contacts chosen in advance. Because it uses plain SMS, it works wherever there is basic phone signal, even with no internet. The same screen offers an alarm siren that keeps playing with the screen locked, a torch that flashes "SOS" in Morse code, a one-tap call to 112 (configurable) and location sharing to any app. It can be started from a Home/Lock Screen widget, Siri, the Action Button and Control Center.
 
 2. Intended users
-Italian-speaking people who spend time alone or outdoors: hikers and mountain-goers (the app is developed on Lake Garda, close to the Alps), cyclists, people walking home at night, elderly people living alone and their families, and parents who want their teenagers to have a simple way to send their position. The interface, texts and default emergency number (112) are designed for Italy.
+Italian-speaking people who may need help where mobile data is weak or absent: elderly people living in rural villages and their families, hikers and mountain-goers, cyclists, people walking home alone at night, and parents who want their teenagers to have a simple way to send their position. Texts, interface and the default emergency number (112) are designed for Italy.
 
-3. Gap addressed
-Most safety apps require an account, a subscription, a backend service or an internet connection, and many share the location continuously with a server. SOS does none of this: no account, no server, no tracking, no third-party SDKs; the position leaves the device only in an SMS the user sees and sends. It works with only cellular voice/SMS coverage, and it puts every emergency tool (SMS with position, siren, Morse torch, emergency call) on a single screen reachable from widget, Lock Screen, Siri and Action Button. Apple's built-in Emergency SOS calls emergency services; our app instead notifies the user's own trusted contacts with an exact, readable address, which is often what is needed in non-life-threatening situations (lost, unsafe, stranded).
+3. Gap in the market
+Most safety apps require registration, an account, a paid subscription or in-app purchases, and they rely on an internet connection and a backend server that continuously tracks the user. SOS requires no registration and no payment, works with SMS only (no data connection needed), has no server, no tracking and no third-party SDKs: the position leaves the device only in an SMS the user sees and sends. It is simple enough for elderly users, and every emergency tool (SMS with position, siren, Morse torch, emergency call) is on a single screen. Apple's built-in Emergency SOS contacts emergency services; SOS instead notifies the user's own family or trusted contacts with an exact, readable address, which is what is needed in most non-life-threatening situations.
 
 4. Beta testing
-[DA COMPLETARE CON DATI REALI: chi ha provato la build via TestFlight, su quali iPhone, e quali modifiche sono nate dai loro commenti. Se il test è stato solo tuo, scrivilo così: Apple preferisce la verità a un elenco inventato.]
+The app was tested by me, the developer, through TestFlight on my own iPhone and in the iOS Simulator, checking the full flow: location and address lookup, the cancellable countdown, the pre-filled SMS, the siren with the screen locked, the Morse torch, the widget, Siri and Action Button triggers. The app works as intended. The design also reflects years of real use of version 1.x by my family in areas with SMS-only coverage.
 
-5. Standalone or suite
-Standalone. The other apps on our account are unrelated: Omnia – Dove guardarlo (streaming guide), instaMB (photo editing), Da Fare (to-do lists), Crea Banner (graphics), Lettore QR (QR code scanner), TSS Academy and emmeBi. None offers location sharing, alarms or emergency features.
+5. Standalone or part of a suite
+Standalone. The other apps on our account are unrelated: Omnia – Dove guardarlo (guide to where to watch films and TV series), instaMB (photo editing), Da Fare (to-do lists and reminders), Crea Banner (banner and graphics creation), Lettore QR (QR code scanner), TSS Academy (online courses app, in development) and emmeBi (app for our company website, in development). None of them offers location sharing, alarms or emergency features.
 
-6. Could it be an in-app purchase of another app?
-No. None of our apps is related to personal safety, and an emergency tool must be a separate, instantly reachable app with its own widget, Siri shortcut and Action Button entry; hiding it inside an unrelated app would defeat its purpose.
+6. Could it be an in-app purchase or feature of another app?
+No. None of our apps is related to personal safety. An emergency tool must be a separate app that can be reached instantly, with its own widget, Siri shortcut and Action Button entry; hiding it inside an unrelated app would defeat its purpose.
 
 7. Shared code or assets with our other apps
-No. The app was written specifically for this product. It shares no code, frameworks or assets with our other apps, apart from Apple system frameworks.
+No. The app shares no code, frameworks or assets with our other apps, apart from Apple system frameworks.
 
 8. Shared codebase or SDK with third-party apps
 No. The app uses only Apple frameworks (SwiftUI, MapKit, CoreLocation, MessageUI, ContactsUI, AVFoundation, WidgetKit, AppIntents). No third-party SDKs, templates or content libraries.
 
 9. Created for a client or third party
-No. SOS is our own product: emmeBiweb (Michele Bazzoli, Lonato del Garda) designed it and first published it on the App Store in 2015 (version 1.x, bundle ID com.emmeibweb.sosapp). That record was removed from App Store Connect and could not be restored, so this 2.0 version, a complete rewrite in SwiftUI with new features, had to be submitted under a new bundle ID. It was not built with a commercial template or an app generation service.
+No. SOS is my own product, created for my own family's need. The idea, the concept and the brand are mine (emmeBiweb – Michele Bazzoli, Lonato del Garda). Version 1.x was published on the App Store under this same developer account in 2015; its initial code was written by an external developer I commissioned. That App Store record was later removed and could not be restored, so this version 2.0, a complete rewrite in SwiftUI with new features, is submitted under a new bundle ID. It was not built from a commercial template or an app generation service.
 
 Thank you for your time,
 Michele Bazzoli – emmeBiweb
